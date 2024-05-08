@@ -1,12 +1,12 @@
 # Proyecto de Backend para CoderHouse - Comisión #55610
-Este es un proyecto de backend desarrollado en JavaScript para el curso de CoderHouse, Comisión #55610.
+Este es un proyecto de backend desarrollado en NodeJS para el curso de CoderHouse, Comisión #55610.
 
 ## Librerías Principales Utilizadas
-**Express:** Framework web de Node.js para crear aplicaciones web y APIs.
-**MongoDB y Mongoose:** Base de datos NoSQL y biblioteca de modelado de datos para MongoDB.
-**Passport:** Middleware de autenticación para Node.js.
-**jsonwebtoken:** Implementación de JSON Web Tokens (JWT) para autenticación.
-**Socket.io:** Biblioteca para aplicaciones web en tiempo real.
+1. `Express:` Framework web de Node.js para crear aplicaciones web y APIs.
+2. `MongoDB y Mongoose:` Base de datos NoSQL y biblioteca de modelado de datos para MongoDB.
+3. `Passport:`Middleware de autenticación para Node.js.
+4. `jsonwebtoken:` Implementación de JSON Web Tokens (JWT) para autenticación.
+5. `Socket.io:`Biblioteca para aplicaciones web en tiempo real.
 
 ## Instalación
 1) Clona este repositorio en tu máquina local.
