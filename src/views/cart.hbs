@@ -1,0 +1,29 @@
+<div class="container">
+  <h3 class="mb-4">Cart ID: {{cart._id}}</h3>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    {{#each cart.products}}
+      <div class="col">
+        <div class="card">
+          <img src="{{this.productId.thumbnails}}" class="card-img-top" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">{{this.productId.title}}</h5>
+            <p class="card-text">{{this.productId.description}}</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Code: {{this.productId.code}}</li>
+              <li class="list-group-item">Price: ${{this.productId.price}}</li>
+              <li class="list-group-item">Quantity: {{this.quantity}}</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-danger" onclick="deleteFromCart('{{../cart._id}}', '{{this.productId.id}}')">Delete Item</button>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <div class="mt-4">
+    <button class="btn btn-primary me-2" onclick="window.history.back()">Back</button>
+    <button class="btn btn-success" onclick="purchaseCart('{{cart._id}}')">Buy Cart</button>
+    
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/src/public/style/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label>Email</label>
+            <input type="email" name="email" required>
+            <br>
+            <label>Password</label>
+            <input type="password" name="password" required>
+            <input type="submit" class="btn btn-primary" value="Login">
+        </form>
+        <p>Don't you have an account? <button class="btn btn-primary" onclick="register()">Register here</button></p>
+        <p>Do you have a Github account? <a href="/github/login" class="btn btn-primary">Log in to Github</a></p>
+        <a href="/" class="btn btn-primary">Back to Home</a>
+    </div>
+    <script src="/js/login.scripts.js"></script>
+</body>
+</html>
